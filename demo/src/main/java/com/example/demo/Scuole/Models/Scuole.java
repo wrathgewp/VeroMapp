@@ -1,4 +1,4 @@
-package com.example.demo.Scuole;
+package com.example.demo.Scuole.Models;
 
 public class Scuole {
     
