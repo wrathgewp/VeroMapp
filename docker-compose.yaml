@@ -6,8 +6,8 @@ services:
     container_name: mysql_container
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: root
-      MYSQL_USER: LucaMartari
+      MYSQL_DATABASE: AcademyDB
+      MYSQL_USER: root_academy
       MYSQL_PASSWORD: academypassword
     ports:
       - "4444:3306" # Porta 4444 esposta all'esterno, mappata alla porta 3306 di MySQL
