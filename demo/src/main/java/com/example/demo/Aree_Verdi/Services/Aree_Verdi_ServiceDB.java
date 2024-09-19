@@ -16,7 +16,22 @@ public class Aree_Verdi_ServiceDB {
     private Aree_Verdi_Repositories aree_verdi_repositories;
 
     @Transactional(readOnly = true)
-    public List<Aree_Verdi> findAll() {
+    public List<Aree_Verdi> getAll() {
         return aree_verdi_repositories.findAll();
+    }
+
+    @Transactional(readOnly = true)
+    public Aree_Verdi getById(Integer id) {
+        return aree_verdi_repositories.findById(id)
+                .orElseThrow(() -> new RuntimeException("Area non trovata."));
+    }
+
+    @Transactional(readOnly = true)
+    public List<Aree_Verdi> getByType(String tipoArea) {
+        if (tipoArea != null && !tipoArea.isEmpty()) {
+            return aree_verdi_repositories.findByTipoArea(tipoArea);
+        } else {
+            throw new IllegalArgumentException("Il tipo_area non può essere nullo o vuoto.");
+        }
     }
 }

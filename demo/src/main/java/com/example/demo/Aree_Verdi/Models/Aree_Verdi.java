@@ -1,8 +1,6 @@
 package com.example.demo.Aree_Verdi.Models;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,7 +8,6 @@ import jakarta.persistence.Table;
 @Table(name = "parchi_giardini_aree_verdi")
 public class Aree_Verdi {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Genera gli ID auto_increment
     private Integer id;
 
     private String nome_layer;
@@ -18,7 +15,7 @@ public class Aree_Verdi {
     private Integer id_oggetto;
     private Integer cod_via;
     private Integer censimento;
-    private String tipo_area;
+    private String tipoArea;
     private String denominazi;
     private String nome_via;
     private Integer sup_verde;
@@ -84,11 +81,11 @@ public class Aree_Verdi {
     }
 
     public String getTipo_area() {
-        return tipo_area;
+        return tipoArea;
     }
 
-    public void setTipo_area(String tipo_area) {
-        this.tipo_area = tipo_area;
+    public void setTipo_area(String tipoArea) {
+        this.tipoArea = tipoArea;
     }
 
     public String getDenominazi() {

@@ -1,0 +1,152 @@
+"FARMACIA";"DENOMINAZI";"CHIAVE";"INDIRIZZO";"OMOGENEA";"QUARTIERE";"CIRCOSCRIZ";"TOOLTIP";"Latitudine";"Longitudine";
+"1";"S. Zeno";"6699-6B";"PIAZZA POZZA 6B,37123 Verona";"S. Zeno";"S. ZENO";"CENTRO STORICO";"1 S. Zeno";"45.4416700209399";"10.9785779615278";
+"2";"Castelvecchio";"1009-1";"LARGO DON G. BOSCO 1,
+37123 Verona";"S. Bernardino";"S. ZENO";"CENTRO STORICO";"2 Castelvecchio";"45.4390852674654";"10.9867946567407";
+"3";"Agli Angeli";"6587-28";"CORSO PORTA NUOVA 28,
+37122 Verona";"Valverde";"CITTADELLA";"CENTRO STORICO";"3 Agli Angeli";"45.4348976440337";"10.9895826890447";
+"4";"Linfa";"6587-27";"CORSO PORTA NUOVA 27,
+37122 Verona";"Pontiere";"CITTADELLA";"CENTRO STORICO";"4 Linfa";"45.436647177776";"10.9910711443171";
+"5";"Internazionale";"1050-28";"PIAZZA BRA' 28,
+37121 Verona";"Valverde";"CITTADELLA";"CENTRO STORICO";"5 Internazionale";"45.4382177628774";"10.991397704581";
+"6";"S. Fermo";"7639-40";"STRADONE S. FERMO 40,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"6 S. Fermo";"45.4379378165479";"10.9969447024587";
+"7";"Sacra Famiglia";"9721-51";"VIA VIGASIO 51,
+37135 Verona";"Genovesa - Gelmetto";"BORGO ROMA";"SUD";"7 Sacra Famiglia";"45.3893491987292";"10.9749959141902";
+"8";"Dr. Bettini Umberto";"3326-71";"VIA MARIN FALIERO 71,
+37138 Verona";"S. Procolo";"BORGO MILANO";"OVEST";"8 Dr. Bettini Umberto";"45.4522627677396";"10.9657931483365";
+"9";"Martini di Fiocco Elena";"8959-9";"VIA STELLA 9,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"9 Martini di Fiocco Elena";"45.4414306829583";"10.998361156289";
+"10";"Due Campane";"4892-52";"VIA MAZZINI 52,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"10 Due Campane";"45.4406890364502";"10.9947751753957";
+"11";"S. Tomio";"4892-11";"VIA MAZZINI 11,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"11 S. Tomio";"45.441765709934";"10.9969972984176";
+"12";"Capri";"599-56";"VIA BASSONE 56,
+37139 Verona";"Basson";"S. MASSIMO";"OVEST";"12 Capri";"45.4521345155576";"10.8992562757224";
+"13";"Al Giglio Eredi";"6573-46";"CORSO PORTA BORSARI 46,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"13 Al Giglio Eredi";"45.4421032402276";"10.9935669626928";
+"14";"Centrale di Signorini";"3265-20";"PIAZZA DELLE ERBE 20,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"14 Centrale di Signorini";"45.4431263087985";"10.9974489138272";
+"15";"Palladio";"137-63";"VIA ALBERE 63,
+37138 Verona";"Porta Nuova";"BORGO MILANO";"OVEST";"15 Palladio";"45.4305104267444";"10.9710141247523";
+"16";"S. Anna";"2754-27";"VIA A. DA MOSTO 27,
+37138 Verona";"Borgo Milano - Centro";"BORGO MILANO";"OVEST";"16 S. Anna";"45.4475763640085";"10.9706036788016";
+"17";"Dr. Soave Antonio";"7878-8";"VIA SAN LUCILLO 8,
+37139 Verona";"S. Massimo - Centro";"S. MASSIMO";"OVEST";"17 Dr. Soave Antonio";"45.4423693288127";"10.9409959482382";
+"18";"S. Anastasia";"7359-29A";"CORSO S. ANASTASIA 29A,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"18 S. Anastasia";"45.4443322459112";"10.9981063537392";
+"19";"Madonna del Popolo";"3884-20";"VIA GARIBALDI 20,
+37121 Verona";"Citta` Antica";"CITTA' ANTICA";"CENTRO STORICO";"19 Madonna del Popolo";"45.4463191788034";"10.9950210901499";
+"20";"Ponte Pietra";"6966-8";"RIGASTE REDENTORE 8,
+37129 Verona";"S. Giovanni in Valle";"VERONETTA";"CENTRO STORICO";"20 Ponte Pietra";"45.4480098114592";"11.0007194864217";
+"21";"S. Chiara";"5425-59A";"VIA MONTORIO 59A,
+37131 Verona";"S. Croce";"BORGO VENEZIA";"EST";"21 S. Chiara";"45.4471307224205";"11.0305244600832";
+"22";"Al Seminario";"35-42";"VIA INTERRATO ACQUA MORTA 42,
+37129 Verona";"Veronetta - centro";"VERONETTA";"CENTRO STORICO";"22 Al Seminario";"45.4421133841177";"11.0039825443393";
+"23";"S. Nazaro";"5564-56";"VIA MURO PADRI 56,
+37129 Verona";"Veronetta - centro";"VERONETTA";"CENTRO STORICO";"23 S. Nazaro";"45.440747537963";"11.0086353976333";
+"24";"S. Paolo";"8212-1A";"VIA SAN VITALE 1A,
+37129 Verona";"Veronetta - centro";"VERONETTA";"CENTRO STORICO";"24 S. Paolo";"45.4391400252376";"11.0040038414389";
+"25";"Alla Concezione";"8030-71";"VIA S. NAZARO 71,
+37129 Verona";"Veronetta - centro";"VERONETTA";"CENTRO STORICO";"25 Alla Concezione";"45.4401881475694";"11.0124578774633";
+"26";"S. Pancrazio";"3836-41";"VIA GALILEO GALILEI 41,
+37133 Verona";"Porto S. Pancrazio - Centro";"PORTO S. PANCRAZIO";"SUD-EST";"26 S. Pancrazio";"45.4346050274148";"11.0198800016967";
+"27";"Borgo Milano";"5054-69";"CORSO MILANO 69,
+37138 Verona";"Borgo Milano - Centro";"BORGO MILANO";"OVEST";"27 Borgo Milano";"45.443281987706";"10.9710904013337";
+"28";"Padovani Dr. Giancarlo";"4657-39";"VIA GOFFREDO MAMELI 39,
+37126 Verona";"Arsenale";"BORGO TRENTO";"NORD-OVEST";"28 Padovani Dr. Giancarlo";"45.4523997525088";"10.9874558289497";
+"29";"Coghi";"6867-11";"VIA QUATTRO NOVEMBRE 11,
+37126 Verona";"Arsenale";"BORGO TRENTO";"NORD-OVEST";"29 Coghi";"45.4453098870704";"10.9889093205023";
+"30";"S. Massimo";"8923-4";"VIA STANGA 4,
+37139 Verona";"Croce bianca";"S. MASSIMO";"OVEST";"30 S. Massimo";"45.4469784683482";"10.9443863637076";
+"31";"Dr. Lio Giuliano";"9458-169";"VIA UNITA' D'ITALIA 169,
+37132 Verona";"S. Michele centro";"S. MICHELE";"SUD-EST";"31 Dr. Lio Giuliano";"45.4340368311375";"11.0419142776012";
+"32";"Balanza Dr. Leopoldo";"9458-120";"VIA UNITA' D'ITALIA 120,
+37132 Verona";"S. Michele centro";"S. MICHELE";"SUD-EST";"32 Balanza Dr. Leopoldo";"45.4337143593214";"11.042878364712";
+"33";"S. Antonio";"3500-66";"VIA COL. GIOVANNI FINCATO 66,
+37131 Verona";"Borgo Venezia - Centro";"BORGO VENEZIA";"EST";"33 S. Antonio";"45.4443998410882";"11.0190783881513";
+"34";"S. Giuseppe";"8879-2";"VIALE SPOLVERINI 2,
+37131 Verona";"Borgo Venezia - Centro";"BORGO VENEZIA";"EST";"34 S. Giuseppe";"45.4404668810146";"11.0190837041131";
+"35";"S. Lucia";"4687-62";"VIA MANTOVANA 62,
+37137 Verona";"S. Lucia - zona orig.";"S. LUCIA";"SUD-OVEST";"35 S. Lucia";"45.4219784830153";"10.9552695587989";
+"36";"S. Teresa";"2118-13";"VIA CENTRO 13,
+37135 Verona";"Tombetta";"BORGO ROMA";"SUD";"36 S. Teresa";"45.415022739578";"10.9900675634609";
+"37";"Roma";"2118-53";"VIA CENTRO 53,
+37135 Verona";"Tomba";"BORGO ROMA";"SUD";"37 Roma";"45.4112740756372";"10.9878993736992";
+"38";"All' Albaro";"1230-10";"PIAZZALE BUCCARI 10,
+37141 Verona";"Montorio - Centro";"MONTORIO";"NORD-EST";"38 All' Albaro";"45.4578002581953";"11.0628147570196";
+"39";"Bellamoli Dr. Sandro";"6363-99";"VIA POIANO 99,
+37142 Verona";"Poiano";"QUINTO";"NORD-EST";"39 Bellamoli Dr. Sandro";"45.4723108555528";"11.0154001245331";
+"40";"Dei Santi";"629-59";"VIA BELFIORE 59,
+37135 Verona";"Ca` di David - Centro";"CA' DI DAVID";"SUD";"40 Dei Santi";"45.3823585592679";"10.995278522618";
+"41";"Soprana Dr.ssa Alessandra";"8941-6";"LARGO STAZIONE VECCHIA 6,
+37124 Verona";"Parona";"PARONA";"NORD-OVEST";"41 Soprana Dr.ssa Alessandra";"45.4776452081876";"10.9475459725057";
+"42";"La Mia Farmacia";"5546-53";"VIA GIOVANNA MURARI BRA' 53,
+37136 Verona";"Golosine - Nord";"GOLOSINE";"SUD-OVEST";"42 La Mia Farmacia";"45.421074037691";"10.9764630240141";
+"43";"Ceccherelli Dr.";"6313-51A";"VIA ANTONIO PISANO 51A,
+37131 Verona";"Borgo Venezia - Centro";"BORGO VENEZIA";"EST";"43 Ceccherelli Dr.";"45.4402894991225";"11.0261821031573";
+"44";"Borgo Antico - Pallaro (Avesa)";"407-1";"PIAZZA AVESA 1,
+37127 Verona";"Avesa - Centro";"AVESA";"NORD-OVEST";"44 Borgo Antico - Pallaro (Avesa)";"45.468971087999";"10.9886072744764";
+"45";"Comunale San Massimo";"7144-16";"VIA BENIAMINO ROMAGNOLI 16,
+37139 Verona";"S. Massimo - Centro";"S. MASSIMO";"OVEST";"45 Comunale San Massimo";"45.4390587321481";"10.9455387374455";
+"46";"Marchiori Dr. Enzo";"9757-28";"VIA VILLA COZZA 28,
+37131 Verona";"S. Croce";"BORGO VENEZIA";"EST";"46 Marchiori Dr. Enzo";"45.4488952940086";"11.0229427306098";
+"47";"Realdon Dr. Gian Domenico";"9763-48";"VIA VILLAFRANCA 48,
+37137 Verona";"S. Lucia - zona orig.";"S. LUCIA";"SUD-OVEST";"47 Realdon Dr. Gian Domenico";"45.4196996486734";"10.9543664855504";
+"48";"Comunale Tomba";"2118-237";"VIA CENTRO 237,
+37135 Verona";"Tomba";"BORGO ROMA";"SUD";"48 Comunale Tomba";"45.4064317128347";"10.9851675020506";
+"49";"Comunale Madonna di Campagna";"7327-259";"VIA ANTONIO SALIERI 259,
+37132 Verona";"Madonna di campagna";"S. MICHELE";"SUD-EST";"49 Comunale Madonna di Campagna";"45.4289316376467";"11.049476801105";
+"50";"Comunale Cadore";"6351-28A";"VIA ALESSANDRO POERIO 28A,
+37124 Verona";"Ponte Crencano - Est";"PONTE CRENCANO";"NORD-OVEST";"50 Comunale Cadore";"45.4598817142649";"10.9771124727121";
+"51";"Comunale Olimpia";"5912-61";"VIALE ANDREA PALLADIO 61,
+37138 Verona";"Stadio";"BORGO MILANO";"OVEST";"51 Comunale Olimpia";"45.4331186917303";"10.9714313368183";
+"52";"Comunale Chievo";"95-104";"VIA AEROPORTO ANGELO BERARDI 104,
+37139 Verona";"Chievo";"BORGO MILANO";"OVEST";"52 Comunale Chievo";"45.4582499416498";"10.9466420544369";
+"53";"Comunale San Rocco";"3299-31";"VIA FABBRICATO SCOLASTICO 31,
+37125 Verona";"Quinzano - Centro";"QUINZANO";"NORD-OVEST";"53 Comunale San Rocco";"45.4652912829731";"10.9752974000138";
+"54";"Comunale Grattacielo";"742-7";"VIA FRANCESCO BERNI 7,
+37122 Verona";"Valverde";"CITTADELLA";"CENTRO STORICO";"54 Comunale Grattacielo";"45.4342068990382";"10.9853639223001";
+"55";"Ponte Catena";"2921-6B";"VIA VASCO DE GAMA 6B,
+37138 Verona";"Navigatori";"BORGO MILANO";"OVEST";"55 Ponte Catena";"45.4493870891832";"10.9799091546165";
+"56";"Martari Eredi";"5060-22";"VIA DEI MILLE 22,
+37126 Verona";"Arsenale";"BORGO TRENTO";"NORD-OVEST";"56 Martari Eredi";"45.4485872223293";"10.9876635961186";
+"57";"Burri Dr. Umberto";"4657-4";"VIA GOFFREDO MAMELI 4,
+37126 Verona";"Cesiolo";"BORGO TRENTO";"NORD-OVEST";"57 Burri Dr. Umberto";"45.4503711431892";"10.9920603668401";
+"58";"Fongaro Dr. Sergio";"2285-11";"VIA CARLO CIPOLLA 11,
+37131 Verona";"Biondella";"BORGO VENEZIA";"EST";"58 Fongaro Dr. Sergio";"45.4442103509324";"11.0162875235263";
+"59";"Bacchini S.N.C.";"4065-23A";"VIA BARTOLOMEO GIULIARI 23A,
+37134 Verona";"I^ Maggio";"BORGO ROMA";"SUD";"59 Bacchini S.N.C.";"45.411022225359";"10.9940119847641";
+"60";"Comunale Golosine";"4092-123";"VIA GOLOSINE 123,
+37136 Verona";"Golosine - Sud";"GOLOSINE";"SUD-OVEST";"60 Comunale Golosine";"45.4181462694079";"10.9645464668324";
+"61";"Comunale Borgo Nuovo";"8563-47";"VIA SELINUNTE 47,
+37138 Verona";"Borgo Nuovo";"BORGO MILANO";"OVEST";"61 Comunale Borgo Nuovo";"45.4494111058459";"10.9580051656896";
+"62";"Comunale Quinto";"9523-85B";"VIA VALPANTENA 85B,
+37142 Verona";"Quinto - Centro";"QUINTO";"NORD-EST";"62 Comunale Quinto";"45.493160325278";"11.0186962396295";
+"63";"Comunale Ca' di David";"1293-3";"VIA CA' DI APRILI 3,
+37135 Verona";"Ca` di David - Centro";"CA' DI DAVID";"SUD";"63 Comunale Ca' di David";"45.382649190545";"11.0013702148511";
+"64";"S. Marco";"5054-143";"CORSO MILANO 143,
+37138 Verona";"Borgo Milano - Centro";"BORGO MILANO";"OVEST";"64 S. Marco";"45.4439884337704";"10.9660283803087";
+"65";"Donaduzzi Dr. Giovanni";"4781-19A";"VIA MARSALA 19A,
+37128 Verona";"Valdonega";"VALDONEGA";"NORD-OVEST";"65 Donaduzzi Dr. Giovanni";"45.4527064040228";"11.0009308547911";
+"66";"Comunale Palazzina";"7794-22";"VIA SAN GIOVANNI LUPATOTO 22,
+37134 Verona";"Polidore";"BORGO ROMA";"SUD";"66 Comunale Palazzina";"45.4121348043841";"10.9991611788307";
+"67";"Armani";"9030-11";"VIA TANARO 11,
+37136 Verona";"Golosine - Sud";"GOLOSINE";"SUD-OVEST";"67 Armani";"45.4174473616832";"10.962433947724";
+"68";"Giarolo Dr. Mario";"4170-5";"VIA ANTONIO GUGLIELMI 5,
+37132 Verona";"Frugose";"S. MICHELE";"SUD-EST";"68 Giarolo Dr. Mario";"45.4327742062123";"11.0520094235837";
+"69";"Farmacia XXIV Giugno";"9613-32A";"VIA VENTIQUATTRO GIUGNO 32A,
+37139 Verona";"S. Massimo - Centro";"S. MASSIMO";"OVEST";"69 Farmacia XXIV Giugno";"45.4337119080567";"10.9469359207451";
+"70";"Farmacia Pancaldo di Dr.ssa Luisa Bonetta";"5942-34";"VIA LEONE PANCALDO 34,
+37138 Verona";"Navigatori";"BORGO MILANO";"OVEST";"70 Farmacia Pancaldo di Dr.ssa Luisa Bonetta";"45.4509216031473";"10.9715605799073";
+"71";"Farmacia dell'Immacolata";"9001-3";"VIA DON L. STURZO 3,
+37138 Verona";"Borgo Milano - Centro";"BORGO MILANO";"OVEST";"71 Farmacia dell'Immacolata";"45.4403563368035";"10.9664809031079";
+"72";"Madonna della Salute s.n.c. dei dottori Ermanno Forgione e Maria Teresa Forgione";"4687-127B";"VIA MANTOVANA 127B,
+37137 Verona";"Quadrante Nord-Est";"S. LUCIA";"SUD-OVEST";"72 Madonna della Salute s.n.c. dei dottori Ermanno Forgione e Maria Teresa Forgione";"45.4069352244943";"10.9314435142142";
+"73";"Farmacia ZAI";"6151-12";"LARGO PERLAR 12,
+37135 Verona";"Z.A.I. Borgo Roma";"BORGO ROMA";"SUD";"73 Farmacia ZAI";"45.4079189986196";"10.9754512072249";
+"75";"San Felice";"676-57";"VIA BELVEDERE 57,
+37131 Verona";"S. Felice extra";"BORGO VENEZIA";"EST";"75 San Felice";"45.4575298314678";"11.0347321898738";
+"76";"Pantheon";"2389-1C";"VIA DELLA COLLINA 1C,
+37142 Verona";"S. Maria in Stelle - Centro";"S. MARIA IN STELLE";"NORD-EST";"76 Pantheon";"45.4965053772699";"11.0343883938462";
+"78";"Farmacia Santa Caterina";"8983-25B";"VIA PALMINO E SILVINO STOPPELE 25B,
+37133 Verona";"Porto S. Pancrazio - Centro";"PORTO S. PANCRAZIO";"SUD-EST";"78 Farmacia Santa Caterina";"45.4322652214736";"11.0140005830316";

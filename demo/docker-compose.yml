@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: AcademyDB
+      MYSQL_USER: root_academy
+      MYSQL_PASSWORD: academypassword
+    ports:
+      - "4444:3306" # Porta 4444 esposta all'esterno, mappata alla porta 3306 di MySQL
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+
