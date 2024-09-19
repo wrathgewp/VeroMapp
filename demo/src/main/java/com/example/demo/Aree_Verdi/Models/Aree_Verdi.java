@@ -9,8 +9,9 @@ import jakarta.persistence.Table;
 @Table(name = "parchi_giardini_aree_verdi")
 public class Aree_Verdi {
     @Id
+    @Column(name = "ENTITYID")
     private Integer id;
-    
+
     @Column(name = "NOME_LAYER")
     private String nome_layer;
 
