@@ -1,5 +1,6 @@
 package com.example.demo.Aree_Verdi.Models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -9,23 +10,56 @@ import jakarta.persistence.Table;
 public class Aree_Verdi {
     @Id
     private Integer id;
-
+    
+    @Column(name = "NOME_LAYER")
     private String nome_layer;
+
+    @Column(name = "CODICE")
     private Integer codice;
+
+    @Column(name = "ID_OGGETTO")
     private Integer id_oggetto;
+
+    @Column(name = "COD_VIA")
     private Integer cod_via;
+
+    @Column(name = "CENSIMENTO")
     private Integer censimento;
+
+    @Column(name = "TIPO_AREA")
     private String tipoArea;
+
+    @Column(name = "DENOMINAZI")
     private String denominazi;
+
+    @Column(name = "NOME_VIA")
     private String nome_via;
+
+    @Column(name = "SUP_VERDE")
     private Integer sup_verde;
+
+    @Column(name = "SUP_PAVIM")
     private Integer sup_pavim;
+
+    @Column(name = "IRRIGAZION")
     private String irrigazion;
+
+    @Column(name = "MANUTENZIO")
     private String manutenzio;
+
+    @Column(name = "ANNOTAZION")
     private String annotazion;
+
+    @Column(name = "CIRCOSCRIZ")
     private String circoscriz;
+
+    @Column(name = "AGGIORNAME")
     private String aggiorname;
+
+    @Column(name = "TOOLTIP")
     private String tooltip;
+
+    @Column(name = "URL_REL")
     private String url_rel;
 
     public Aree_Verdi() {
