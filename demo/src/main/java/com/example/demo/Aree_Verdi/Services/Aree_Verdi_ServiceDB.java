@@ -9,6 +9,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.demo.Aree_Verdi.Models.Aree_Verdi;
 import com.example.demo.Aree_Verdi.Repositories.Aree_Verdi_Repositories;
 
+// Quali chiamate fare
+// 1. getAll() -- FATTO
+// 2. getById(id) -- FATTO
+// 3. getByType(tipoArea) -- FATTO
+// 4. insert(Aree_Verdi)
+// 5. update(Aree_Verdi)
+// 6. delete(id)
 
 @Service
 public class Aree_Verdi_ServiceDB {
