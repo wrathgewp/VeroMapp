@@ -18,7 +18,7 @@ import com.example.demo.Aree_Verdi.Repositories.Aree_Verdi_Repositories;
 // 6. delete(id)
 
 @Service
-public class Aree_Verdi_ServiceDB {
+public class Aree_Verdi_ServiceDB implements Aree_Verdi_ServiceInterface {
     @Autowired
     private Aree_Verdi_Repositories aree_verdi_repositories;
 
@@ -40,5 +40,17 @@ public class Aree_Verdi_ServiceDB {
         } else {
             throw new IllegalArgumentException("Il tipo_area non può essere nullo o vuoto.");
         }
+    }
+
+    @Transactional
+    public Aree_Verdi insertAreaVerde(Aree_Verdi areaVerde) {
+        return aree_verdi_repositories.save(areaVerde);
+    }
+
+    @Transactional
+    public void deleteAreaVerde(Integer id) {
+        Aree_Verdi areaVerde = aree_verdi_repositories.findById(id)
+                .orElseThrow(() -> new RuntimeException("Area non trovata."));
+        aree_verdi_repositories.delete(areaVerde);
     }
 }
