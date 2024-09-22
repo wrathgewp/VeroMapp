@@ -8,26 +8,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "parchi_giardini_aree_verdi")
 public class Aree_Verdi {
-    public Aree_Verdi(Integer id, String nome_layer, Integer codice, Integer id_oggetto, Integer cod_via, Integer censimento, String tipoArea, String denominazi, String nome_via, Integer sup_verde, Integer sup_pavim, String irrigazion, String manutenzio, String annotazion, String circoscriz, String aggiorname, String tooltip, String url_rel) {
-    this.id = id;
-    this.nome_layer = nome_layer;
-    this.codice = codice;
-    this.id_oggetto = id_oggetto;
-    this.cod_via = cod_via;
-    this.censimento = censimento;
-    this.tipoArea = tipoArea;
-    this.denominazi = denominazi;
-    this.nome_via = nome_via;
-    this.sup_verde = sup_verde;
-    this.sup_pavim = sup_pavim;
-    this.irrigazion = irrigazion;
-    this.manutenzio = manutenzio;
-    this.annotazion = annotazion;
-    this.circoscriz = circoscriz;
-    this.aggiorname = aggiorname;
-    this.tooltip = tooltip;
-    this.url_rel = url_rel;
-}
 
     @Id
     @Column(name = "ENTITYID")
@@ -84,9 +64,34 @@ public class Aree_Verdi {
     @Column(name = "URL_REL")
     private String url_rel;
 
+
+    // Costruttore
+    public Aree_Verdi(Integer id, String nome_layer, Integer codice, Integer id_oggetto, Integer cod_via, Integer censimento, String tipoArea, String denominazi, String nome_via, Integer sup_verde, Integer sup_pavim, String irrigazion, String manutenzio, String annotazion, String circoscriz, String aggiorname, String tooltip, String url_rel) {
+        this.id = id;
+        this.nome_layer = nome_layer;
+        this.codice = codice;
+        this.id_oggetto = id_oggetto;
+        this.cod_via = cod_via;
+        this.censimento = censimento;
+        this.tipoArea = tipoArea;
+        this.denominazi = denominazi;
+        this.nome_via = nome_via;
+        this.sup_verde = sup_verde;
+        this.sup_pavim = sup_pavim;
+        this.irrigazion = irrigazion;
+        this.manutenzio = manutenzio;
+        this.annotazion = annotazion;
+        this.circoscriz = circoscriz;
+        this.aggiorname = aggiorname;
+        this.tooltip = tooltip;
+        this.url_rel = url_rel;
+    }
+    
+    // Costruttore vuoto
     public Aree_Verdi() {
     }
-
+    
+    
     // Metodi setter e getter
     public Integer getId() {
         return id;
