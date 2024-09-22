@@ -25,50 +25,37 @@ public class Aree_Verdi_Controller {
     @Autowired
     private Aree_Verdi_ServiceDB areeVerdiServiceDB;
 
-    @GetMapping("/getAll/all")  // Aggiunto "/"
+    // GET per ottenere tutte le aree verdi
+    @GetMapping("/getAll")
     public List<Aree_Verdi> getAll() {
         return areeVerdiServiceDB.getAll();
     }
 
+    // GET per ottenere un'area verde per ID
     @GetMapping("/getId/{id}")
     public Aree_Verdi getById(@PathVariable Integer id) {
         return areeVerdiServiceDB.getById(id);
     }
 
+    // GET per ottenere aree verdi per tipo_area
     @GetMapping("/getByType/{tipo_area}")
     public List<Aree_Verdi> getByType(@PathVariable String tipo_area) {
         return areeVerdiServiceDB.getByType(tipo_area);
     }
 
+    // POST per inserire un'area verde
     @PostMapping("/insert")
     public Aree_Verdi insert(@RequestBody Aree_Verdi areaVerde) {
         return areeVerdiServiceDB.insertAreaVerde(areaVerde);
     }
 
+    // PUT per aggiornare un'area verde
     @PutMapping("/update/{id}")
     public Aree_Verdi update(@PathVariable Integer id, @RequestBody Aree_Verdi areaVerde) {
-        Aree_Verdi existingAreaVerde = areeVerdiServiceDB.getById(id);
-        existingAreaVerde.setNome_layer(areaVerde.getNome_layer());
-        existingAreaVerde.setCodice(areaVerde.getCodice());
-        existingAreaVerde.setId_oggetto(areaVerde.getId_oggetto());
-        existingAreaVerde.setCod_via(areaVerde.getCod_via());
-        existingAreaVerde.setCensimento(areaVerde.getCensimento());
-        existingAreaVerde.setTipo_area(areaVerde.getTipo_area());
-        existingAreaVerde.setDenominazi(areaVerde.getDenominazi());
-        existingAreaVerde.setNome_via(areaVerde.getNome_via());
-        existingAreaVerde.setSup_verde(areaVerde.getSup_verde());
-        existingAreaVerde.setSup_pavim(areaVerde.getSup_pavim());
-        existingAreaVerde.setIrrigazion(areaVerde.getIrrigazion());
-        existingAreaVerde.setManutenzio(areaVerde.getManutenzio());
-        existingAreaVerde.setAnnotazion(areaVerde.getAnnotazion());
-        existingAreaVerde.setCircoscriz(areaVerde.getCircoscriz());
-        existingAreaVerde.setAggiorname(areaVerde.getAggiorname());
-        existingAreaVerde.setTooltip(areaVerde.getTooltip());
-        existingAreaVerde.setUrl_rel(areaVerde.getUrl_rel());
-
-        return areeVerdiServiceDB.insertAreaVerde(existingAreaVerde);
+        return areeVerdiServiceDB.updateAreaVerde(id, areaVerde);
     }
 
+    // DELETE per eliminare un'area verde
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable Integer id) {
         areeVerdiServiceDB.deleteAreaVerde(id);
