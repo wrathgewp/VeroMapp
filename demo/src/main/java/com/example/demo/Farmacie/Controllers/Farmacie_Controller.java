@@ -1,7 +1,7 @@
 package com.example.demo.Farmacie.Controllers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.Farmacie.Models.Farmacie;
 
