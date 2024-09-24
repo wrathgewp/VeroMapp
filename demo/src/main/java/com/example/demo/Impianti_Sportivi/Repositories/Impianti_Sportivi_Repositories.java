@@ -6,4 +6,6 @@ import com.example.demo.Impianti_Sportivi.Models.Impianti_Sportivi;
 
 public interface Impianti_Sportivi_Repositories extends JpaRepository<Impianti_Sportivi, Integer> {
     List<Impianti_Sportivi> findByQuartiere(String quartiere);
+
+    List<Impianti_Sportivi> findAllByOrderByIdAsc();
 }

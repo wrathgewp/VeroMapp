@@ -17,7 +17,7 @@ public class Aree_Verdi_ServiceDB implements Aree_Verdi_ServiceInterface {
     // Metodo per ottenere tutte le aree verdi
     @Transactional(readOnly = true)
     public List<Aree_Verdi> getAll() {
-        return aree_verdi_repositories.findAll();
+        return aree_verdi_repositories.findAllByOrderByIdAsc();
     }
 
     // Metodo per ottenere un'area verde per ID

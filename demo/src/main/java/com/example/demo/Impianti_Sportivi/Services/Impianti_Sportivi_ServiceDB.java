@@ -16,7 +16,7 @@ public class Impianti_Sportivi_ServiceDB {
     // Metodo per ottenere tutti gli impianti sportivi
     @Transactional(readOnly = true)
     public List<Impianti_Sportivi> getAll() {
-        return impiantiSportiviRepositories.findAll();
+        return impiantiSportiviRepositories.findAllByOrderByIdAsc();
     }
 
     // Metodo per ottenere un'impianto sportivo per ID

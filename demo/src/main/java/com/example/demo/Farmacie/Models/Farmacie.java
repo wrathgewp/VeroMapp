@@ -28,8 +28,8 @@ public class Farmacie {
     @Column(name = "QUARTIERE")
     private String quartiere;
 
-    @Column(name = "CIRCOSCRIZ")
-    private String circoscrizio;
+    @Column(name = "CIRCONSCRIZ")
+    private String circonscriz;
 
     @Column(name = "TOOLTIP")
     private String tooltip;
@@ -41,14 +41,14 @@ public class Farmacie {
     private String longitudine;
 
 
-    public Farmacie(Integer id, String denominazi, String chiave, String indirizzo, String omogenea, String quartiere, String circoscrizio, String tooltip, String latitudine, String longitudine) {
+    public Farmacie(Integer id, String denominazi, String chiave, String indirizzo, String omogenea, String quartiere, String circonscriz, String tooltip, String latitudine, String longitudine) {
         this.id = id;
         this.denominazi = denominazi;
         this.chiave = chiave;
         this.indirizzo = indirizzo;
         this.omogenea = omogenea;
         this.quartiere = quartiere;
-        this.circoscrizio = circoscrizio;
+        this.circonscriz = circonscriz;
         this.tooltip = tooltip;
         this.latitudine = latitudine;
         this.longitudine = longitudine;
@@ -109,11 +109,11 @@ public class Farmacie {
     }
 
     public String getCircoscrizio() {
-        return circoscrizio;
+        return circonscriz;
     }
 
-    public void setCircoscrizio(String circoscrizio) {
-        this.circoscrizio = circoscrizio;
+    public void setCircoscrizio(String circonscriz) {
+        this.circonscriz = circonscriz;
     }
 
     public String getTooltip() {
