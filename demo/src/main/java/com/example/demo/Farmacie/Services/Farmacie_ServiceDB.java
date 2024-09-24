@@ -29,7 +29,7 @@ public class Farmacie_ServiceDB implements Farmacie_ServiceInterface {
 
     // Metodo per ottenere farmacie per quartiere
     @Transactional(readOnly = true)
-    public List<Farmacie> getByType(String quartiere) {
+    public List<Farmacie> getByQuartiere(String quartiere) {
         if (quartiere != null && !quartiere.isEmpty()) {
         return farmacie_repositories.findByQuartiere(quartiere);
         } else {

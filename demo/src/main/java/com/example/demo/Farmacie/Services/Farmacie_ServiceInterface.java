@@ -12,7 +12,7 @@ public interface Farmacie_ServiceInterface {
     Farmacie getById(Integer id);
     
     // Metodo per ottenere farmacie per quartiere
-    List<Farmacie> getByType(String quartiere);
+    List<Farmacie> getByQuartiere(String quartiere);
     
     // Metodo per inserire una farmacia
     Farmacie insertAreaVerde(Farmacie areaVerde);

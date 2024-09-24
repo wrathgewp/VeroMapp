@@ -34,10 +34,10 @@ public class Farmacie_Controller {
         return farmacieServiceDB.getById(id);
     }
 
-    // GET per ottenere farmacie per tipo_area
-    @GetMapping("/getByType/{tipo_area}")
-    public List<Farmacie> getByType(@PathVariable String tipo_area) {
-        return farmacieServiceDB.getByType(tipo_area);
+    // GET per ottenere farmacie per quartiere
+    @GetMapping("/getByQuartiere/{quartiere}")
+    public List<Farmacie> getByQuartiere(@PathVariable String quartiere) {
+        return farmacieServiceDB.getByQuartiere(quartiere);
     }
 
     // POST per inserire una farmacia
