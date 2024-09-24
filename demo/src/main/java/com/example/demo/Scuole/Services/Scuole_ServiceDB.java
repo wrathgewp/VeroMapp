@@ -28,9 +28,9 @@ public class Scuole_ServiceDB implements Scuole_ServiceInterface {
 
     // Metodo per ottenere scuole per grado
     @Transactional(readOnly = true)
-    public List<Scuole> getByGrade(Integer grado) {
+    public List<Scuole> getByGrado(Integer grado) {
         if (grado != null) {
-        return scuole_repositories.getByGrade(grado);
+        return scuole_repositories.getByGrado(grado);
         } else {
             throw new IllegalArgumentException("Il tipo_area non può essere nullo o vuoto.");
         }

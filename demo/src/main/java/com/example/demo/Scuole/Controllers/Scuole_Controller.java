@@ -34,9 +34,9 @@ public class Scuole_Controller {
     }
 
     // GET per ottenere scuole per grado
-    @GetMapping("/getByGrade/{grado}")
-    public List<Scuole> getByGrade(@PathVariable Integer grado) {
-        return scuoleServiceDB.getByGrade(grado);
+    @GetMapping("/getByGrado/{grado}")
+    public List<Scuole> getByGrado(@PathVariable Integer grado) {
+        return scuoleServiceDB.getByGrado(grado);
     }
 
     // POST per inserire una scuola

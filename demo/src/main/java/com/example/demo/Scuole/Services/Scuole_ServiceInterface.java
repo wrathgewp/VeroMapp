@@ -12,6 +12,6 @@ public interface Scuole_ServiceInterface {
     Scuole getById(Integer id);
 
     // Metodo per ottenere scuole per grado
-    List<Scuole> getByGrade(Integer grado);
+    List<Scuole> getByGrado(Integer grado);
 
 }
