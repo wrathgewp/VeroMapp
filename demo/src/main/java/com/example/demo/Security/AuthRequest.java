@@ -1,4 +1,4 @@
-package com.example.demo.Aree_Verdi.Models;
+package com.example.demo.Security;
 
 public class AuthRequest {
     private String username;

@@ -1,8 +1,5 @@
-package com.example.demo.Aree_Verdi.Controllers;
+package com.example.demo.Security;
 
-import com.example.demo.Aree_Verdi.Models.AuthRequest;
-import com.example.demo.Aree_Verdi.Models.AuthResponse;
-import com.example.demo.Aree_Verdi.Services.JwtTokenUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
