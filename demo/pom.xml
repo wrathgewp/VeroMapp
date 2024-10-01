@@ -126,5 +126,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>AcademyProject</finalName>
 	</build>
 </project>
