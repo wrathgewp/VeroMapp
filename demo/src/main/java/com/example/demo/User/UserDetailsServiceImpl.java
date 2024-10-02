@@ -1,0 +1,23 @@
+package com.example.demo.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService {
+
+    @Autowired
+    private UserRepository userRepository;  // Assumi di avere un repository per la tabella User
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = userRepository.findByUser(username);  // Assicurati che questo metodo esista nel repository
+        if (user == null) {
+            throw new UsernameNotFoundException("Utente non trovato: " + username);
+        }
+        return new MyUserDetails(user);  // Restituisce i dettagli dell'utente
+    }
+}
