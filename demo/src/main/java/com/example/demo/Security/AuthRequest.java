@@ -3,6 +3,7 @@ package com.example.demo.Security;
 public class AuthRequest {
     private String username;
     private String password;
+    private String role;
 
     // Getters e setters
     public String getUsername() {
@@ -19,5 +20,13 @@ public class AuthRequest {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

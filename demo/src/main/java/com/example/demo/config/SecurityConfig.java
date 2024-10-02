@@ -19,10 +19,13 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-            .csrf(csrf -> csrf.disable())  // Nuovo modo di disabilitare il CSRF
+            .csrf(csrf -> csrf.disable())  // Disabilita il CSRF
             .authorizeHttpRequests(auth -> {
                 auth.requestMatchers("/auth/**").permitAll();  // Permetti l'accesso libero alle API di autenticazione
-                auth.requestMatchers("/getAll").permitAll();  // Permetti l'accesso libero a /farmacie/getAll
+                auth.requestMatchers("GET", "/**").permitAll();  // Permetti l'accesso libero a tutte le richieste GET
+                auth.requestMatchers("POST", "/**").hasRole("admin");  // Solo l'admin può fare richieste POST
+                auth.requestMatchers("PUT", "/**").hasRole("admin");   // Solo l'admin può fare richieste PUT
+                auth.requestMatchers("DELETE", "/**").hasRole("admin"); // Solo l'admin può fare richieste DELETE
                 auth.anyRequest().authenticated();  // Tutte le altre richieste richiedono autenticazione
             })
             .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)  // Aggiungi il filtro JWT

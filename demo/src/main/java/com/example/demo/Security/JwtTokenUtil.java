@@ -18,9 +18,9 @@ public class JwtTokenUtil {
     // Genera una chiave sicura per l'algoritmo HS256
     private SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
-    // Metodo per generare il token JWT
-    public String generateToken(String username) {
+    public String generateToken(String username, String role) {
         Map<String, Object> claims = new HashMap<>();
+        claims.put("role", role);
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(username)
@@ -34,6 +34,18 @@ public class JwtTokenUtil {
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
     }
+
+    // Estrai il ruolo dal token JWT
+    public String extractRole(String token) {
+        return extractClaim(token, claims -> (String) claims.get("role"));
+    }
+    
+    // Metodo per validare user e pass
+    public Boolean validateToken(String token, String username, String role) {
+        final String extractedUsername = extractUsername(token);
+        final String extractedRole = extractRole(token);
+        return (extractedUsername.equals(username) && extractedRole.equals(role) && !isTokenExpired(token));
+    }    
 
     // Metodo generico per estrarre un singolo claim da un token
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {

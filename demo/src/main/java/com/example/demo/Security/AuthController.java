@@ -18,7 +18,7 @@ public class AuthController {
     public ResponseEntity<?> login(@RequestBody AuthRequest authRequest) {
         // Simula una verifica delle credenziali. Sostituisci con la tua logica.
         if ("martaroech".equals(authRequest.getUsername()) && "chefigata!".equals(authRequest.getPassword())) {
-            String token = jwtTokenUtil.generateToken(authRequest.getUsername());
+            String token = jwtTokenUtil.generateToken(authRequest.getUsername(), authRequest.getRole());
             return ResponseEntity.ok(new AuthResponse(token));
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
