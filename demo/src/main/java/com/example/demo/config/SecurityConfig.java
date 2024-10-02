@@ -3,6 +3,7 @@ package com.example.demo.config;
 import com.example.demo.Security.JwtRequestFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -19,14 +20,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-            .csrf(csrf -> csrf.disable())  // Disabilita il CSRF
+            .csrf(csrf -> csrf.disable())  // Disabilita CSRF
             .authorizeHttpRequests(auth -> {
-                auth.requestMatchers("/auth/**").permitAll();  // Permetti l'accesso libero alle API di autenticazione
-                auth.requestMatchers("GET", "/**").permitAll();  // Permetti l'accesso libero a tutte le richieste GET
-                auth.requestMatchers("POST", "/**").hasRole("admin");  // Solo l'admin può fare richieste POST
-                auth.requestMatchers("PUT", "/**").hasRole("admin");   // Solo l'admin può fare richieste PUT
-                auth.requestMatchers("DELETE", "/**").hasRole("admin"); // Solo l'admin può fare richieste DELETE
-                auth.anyRequest().authenticated();  // Tutte le altre richieste richiedono autenticazione
+                auth.requestMatchers("/auth/**").permitAll();  // Permetti l'accesso libero a tutte le chiamate verso /auth
+                auth.requestMatchers(HttpMethod.GET, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
+                auth.requestMatchers(HttpMethod.POST, "/**").hasAuthority("admin");
+                auth.requestMatchers(HttpMethod.PUT, "/**").hasAuthority("admin");
+                auth.requestMatchers(HttpMethod.DELETE, "/**").hasAuthority("admin");
+                auth.anyRequest().authenticated();  // Tutto il resto richiede autenticazione
             })
             .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)  // Aggiungi il filtro JWT
             .build();

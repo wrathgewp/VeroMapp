@@ -1,15 +1,13 @@
 package com.example.demo.User;
 
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.Collections;
 
 public class MyUserDetails implements UserDetails {
 
-    private final User user;  // Usa il tuo modello User
+    private User user;
 
     public MyUserDetails(User user) {
         this.user = user;
@@ -21,18 +19,18 @@ public class MyUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Restituisce il ruolo come GrantedAuthority per Spring Security
-        return Collections.singleton(new SimpleGrantedAuthority("ROLE_" + user.getRole().toUpperCase()));
+        // Logica per restituire le autorità (ruoli) dell'utente
+        return null;
     }
 
     @Override
     public String getPassword() {
-        return user.getPass();  // Restituisci la password dalla tabella User
+        return user.getPass();
     }
 
     @Override
     public String getUsername() {
-        return user.getUser();  // Restituisci lo username dalla tabella User
+        return user.getUser();
     }
 
     @Override
