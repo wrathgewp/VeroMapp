@@ -30,7 +30,7 @@ public class AuthController {
             // Logica di autenticazione
             UserDetails userDetails = userDetailsService.loadUserByUsername(authRequest.getUsername());
             if (passwordEncoder.matches(authRequest.getPassword(), userDetails.getPassword())) {
-                String token = jwtTokenUtil.generateToken(userDetails.getUsername(), ((MyUserDetails) userDetails).getUser().getRole());
+                String token = jwtTokenUtil.generateToken(userDetails.getUsername(), ((MyUserDetails) userDetails).getRuolo());
                 return ResponseEntity.ok(new AuthResponse(token));
             } else {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{\"error\": \"Password errata\"}");

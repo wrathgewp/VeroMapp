@@ -24,9 +24,13 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> {
                 auth.requestMatchers("/auth/**").permitAll();  // Permetti l'accesso libero a tutte le chiamate verso /auth
                 auth.requestMatchers(HttpMethod.GET, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
-                auth.requestMatchers(HttpMethod.POST, "/**").hasAuthority("admin");
-                auth.requestMatchers(HttpMethod.PUT, "/**").hasAuthority("admin");
-                auth.requestMatchers(HttpMethod.DELETE, "/**").hasAuthority("admin");
+                auth.requestMatchers(HttpMethod.POST, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
+                auth.requestMatchers(HttpMethod.PUT, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
+                auth.requestMatchers(HttpMethod.DELETE, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
+                // auth.requestMatchers(HttpMethod.GET, "/**").permitAll();  // Consenti a tutti di eseguire le chiamate GET
+                // auth.requestMatchers(HttpMethod.POST, "/**").hasRole("admin");
+                // auth.requestMatchers(HttpMethod.PUT, "/**").hasAuthority("admin");
+                // auth.requestMatchers(HttpMethod.DELETE, "/**").hasAuthority("admin");
                 auth.anyRequest().authenticated();  // Tutto il resto richiede autenticazione
             })
             .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)  // Aggiungi il filtro JWT
